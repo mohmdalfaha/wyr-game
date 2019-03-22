@@ -3,9 +3,10 @@
  import Tweet from './Tweet'
  import NewTweet from './NewTweet'
 
- class TweetPage extends Component {
+class TweetPage extends Component {
   render() {
     const { id, replies } = this.props
+    console.log(this.props)
     return (
       <div>
         <Tweet id={id} />
@@ -19,9 +20,9 @@
               ))}
           </ul>
       </div>
-      )
+    )
   }
- }
+}
 
  function mapStateToProps ({ authedUser, tweets, users }, props) {
   const { id } = props.match.params
@@ -31,7 +32,6 @@
     replies: !tweets[id]
     ? []
     : tweets[id].replies.sort((a,b,) => tweets[b].timestamp - tweets[a.timestamp])
-
   }
  }
 

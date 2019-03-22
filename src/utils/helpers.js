@@ -9,8 +9,8 @@ export function formatTweet (tweet, author, authedUser, parentTweet) {
   const { name, avatarURL } = author
 
   return {
-    name,
     id,
+    name,
     timestamp,
     text,
     avatar: avatarURL,

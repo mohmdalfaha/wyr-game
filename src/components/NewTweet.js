@@ -26,6 +26,7 @@ handleSubmit = (e) => {
 
   dispatch(handleAddTweet(text, id))
 
+  console.log(this.props)
   this.setState(() => ({
     text:'',
     toHome: id ? false : true,
