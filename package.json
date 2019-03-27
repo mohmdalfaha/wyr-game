@@ -2,6 +2,7 @@
   "name": "chirper",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mohmdalfaha.github.io/",
   "dependencies": {
     "create-react-app": "^2.1.3",
     "loading": "^1.13.3",
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -24,6 +27,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udacity/reactnd-chirper-app.git"
+    "url": "https://github.com/mohmdalfaha/Twitter-Kind-of.git"
   }
 }
